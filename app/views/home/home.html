@@ -1,0 +1,11 @@
+<i class="fa fa-3x fa-spinner fa-spin app-center" ng-show="home.isLoading()"></i>
+<div>
+    <div class="form-inline" ng-show="home.authorities">
+        <label for="authority">Select Authority: </label>
+        <select class="form-control" id="authority" ng-model="home.selectedAuthority" ng-options="authority as authority.name for authority in home.authorities track by authority.id">
+            <option style="display: none" value="">Please select</option>
+        </select>
+    </div>
+
+    <rating-distribution authority="home.selectedAuthority" ng-show="home.selectedAuthority"></rating-distribution>
+</div>

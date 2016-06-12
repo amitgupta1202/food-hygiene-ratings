@@ -1,0 +1,16 @@
+<div class="">
+    <table class="table" ng-show="model.ratingDistribution">
+        <thead>
+        <tr>
+            <th>Rating</th>
+            <th>Percentage</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="(rating, percentage) in model.ratingDistribution">
+            <td>{{rating}}</td>
+            <td>{{percentage}}%</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
