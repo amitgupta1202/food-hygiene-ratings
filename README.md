@@ -1,7 +1,7 @@
 #Food Hygiene Rating
 
 ##Architecture:
-Application has divided into 3 layers
+###Application has divided into 3 layers
 1. Application Services (implemented in java (package - com.infinityworks.foodHygieneRaings.services))
 2. Rest Layer (implemented using jersey, intentions to keep it isomorphic and include HAL links so users can follow links to browse)
 3. Client UI (implemented using angular, and agular follows HAL links to show re report)
